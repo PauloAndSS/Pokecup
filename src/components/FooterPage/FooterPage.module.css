@@ -1,0 +1,10 @@
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2{
+    color: rgb(255, 255, 255,0.2);
+}
