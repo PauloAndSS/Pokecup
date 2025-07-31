@@ -35,7 +35,7 @@ function GalleryPokemon(props: GalleryPokemonProps) {
         {
           pokelist.pokemons.map((pokemon): React.ReactNode => {
             return (
-              <CardsPoke nome={pokemon.Name()} tipos={pokemon.Types()} urlImg={pokemon.Sprite()} />
+              <CardsPoke nome={pokemon.Name()} tipos={pokemon.Types()} urlImg={pokemon.Sprite()}/>
             )
           })
         }

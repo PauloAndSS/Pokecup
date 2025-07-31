@@ -12,7 +12,7 @@ function PageBuilder (props:pageProps){
     return(
        <html lang="en">
         <head>
-            <title>Document</title>
+            <title>Pokecup</title>
         </head>
         <body>
             <HeaderPage Login={false}/>

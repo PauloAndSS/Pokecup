@@ -1,87 +1,54 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import styles from './CardsPoke.module.css';
 
-type CardsProps = {
-    nome:React.ReactNode;
-    tipos:React.ReactNode;
-    urlImg:React.ReactNode;
+interface CardsProps {
+  nome: React.ReactNode
+  tipos: React.ReactNode;
+  urlImg: React.ReactNode;
 }
 
+function getTipoColor(tipo: string): string {
+  switch (tipo.toLowerCase()) {
+    case 'fire': return '#FF5722';
+    case 'water': return '#2196F3';
+    case 'grass': return '#4CAF50';
+    case 'electric': return '#FFEB3B';
+    case 'psychic': return '#9C27B0';
+    case 'ice': return '#03A9F4';
+    case 'rock': return '#795548';
+    case 'ground': return '#A1887F';
+    case 'poison': return '#673AB7';
+    case 'bug': return '#8BC34A';
+    case 'dragon': return '#3F51B5';
+    case 'flying': return '#00BCD4';
+    case 'fighting': return '#E53935';
+    case 'ghost': return '#607D8B';
+    case 'steel': return '#B0BEC5';
+    case 'dark': return '#212121';
+    case 'fairy': return '#F06292';
+    case 'normal': return '#BDBDBD';
+    default: return '#BDBDBD';
+  }
+}
+
+
 function CardsPoke(props: CardsProps) {
-  let name = props.nome as string; 
+  let nome = props.nome as string; 
   let types = props.tipos as string[]; 
   let urlImg = props.urlImg as string;
-
+  
   return (
-    <div className={styles.cardsPoke}>
-      <img src={urlImg} alt={name} />
+    <div
+      className={`${styles.cardsPoke}`}
+    >
+      <img src={urlImg} alt={nome} />
       <div className="itens">
-        <h2>{name}</h2>
+        <h2>{nome}</h2>
         <div>
           {types.map((tipo: string, index: number): React.ReactNode => {
-            let bgColor = '';
-
-            switch (tipo.toLowerCase()) {
-              case 'fire':
-                bgColor = '#FF5722';
-                break;
-              case 'water':
-                bgColor = '#2196F3';
-                break;
-              case 'grass':
-                bgColor = '#4CAF50';
-                break;
-              case 'electric':
-                bgColor = '#FFEB3B';
-                break;
-              case 'psychic':
-                bgColor = '#9C27B0';
-                break;
-              case 'ice':
-                bgColor = '#03A9F4';
-                break;
-              case 'rock':
-                bgColor = '#795548';
-                break;
-              case 'ground':
-                bgColor = '#A1887F';
-                break;
-              case 'poison':
-                bgColor = '#673AB7';
-                break;
-              case 'bug':
-                bgColor = '#8BC34A';
-                break;
-              case 'dragon':
-                bgColor = '#3F51B5';
-                break;
-              case 'flying':
-                bgColor = '#00BCD4';
-                break;
-              case 'fighting':
-                bgColor = '#E53935';
-                break;
-              case 'ghost':
-                bgColor = '#607D8B';
-                break;
-              case 'steel':
-                bgColor = '#B0BEC5';
-                break;
-              case 'dark':
-                bgColor = '#212121';
-                break;
-              case 'fairy':
-                bgColor = '#F06292';
-                break;
-              case 'normal':
-                bgColor = '#BDBDBD';
-                break;
-              default:
-                bgColor = '#BDBDBD';
-            }
-
+            const bgColor = getTipoColor(tipo);
             return (
-              <h3 key={index} style={{backgroundColor: bgColor}}>
+              <h3 key={index} style={{ backgroundColor: bgColor }}>
                 {tipo}
               </h3>
             );

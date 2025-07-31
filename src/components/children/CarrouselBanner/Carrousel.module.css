@@ -1,0 +1,44 @@
+.banner {
+  position: relative;
+  width: 80vw;
+  max-width: 900px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem de fundo */
+.banner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Texto sobreposto à esquerda */
+.spanBanner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: 'Segoe UI', sans-serif;
+  backdrop-filter: blur(2px);
+  animation: slideInLeft 1s ease-in-out;
+}
+
+/* Animação suave */
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}

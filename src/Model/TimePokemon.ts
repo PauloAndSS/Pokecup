@@ -1,11 +1,12 @@
 import Pokemon from "./Pokemon";
 
 class TimePokemon {
-    private NomeTime:string;
-    private Time:Pokemon[] = [];
+    private NomeTime: string;
+    private Time: Pokemon[] = [];
 
-    constructor(nome :string){
-        this.NomeTime = nome;
+    constructor(nome: string, time?: Pokemon[]) {
+    this.NomeTime = nome;
+    if (time) this.Time = time;
     }
 
     nomeTime(){
@@ -14,6 +15,10 @@ class TimePokemon {
 
     addTime(pokemon:Pokemon){
         this.Time.push(pokemon)
+    }
+
+    getTime(){
+        return this.Time;
     }
 
     deleteTime(nomePokemon:string){

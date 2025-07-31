@@ -17,6 +17,7 @@ function HeaderPage(props:headerProps){
             </div>
             <div className="">
                 <nav>
+                    <a href="/VGC"><h2>VGC</h2></a>
                     <a href="/TCG"><h2>TCG</h2></a>
                     <a href="/POKEDEX"><h2>POKEDEX</h2></a>
                 </nav>

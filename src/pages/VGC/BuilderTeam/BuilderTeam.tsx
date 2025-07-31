@@ -1,4 +1,5 @@
 import GalleryPokemon from "../../../components/children/GalleryPokemons/GalleryPokemons";
+
 import PageBuilder from "../../../components/PageBuilder/PageBuilder";
 
 function BuilderTeam(){

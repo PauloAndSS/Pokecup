@@ -32,3 +32,9 @@
     display: flex;
     gap: 8px;
 }
+
+/* Exemplo no CSS Modules */
+.inTeam {
+  box-shadow: 0 0 10px #3b4cca;
+  transform: scale(1.05);
+}
