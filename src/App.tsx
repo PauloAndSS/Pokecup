@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import BuilderTeam from './pages/VGC/BuilderTeam/BuilderTeam';
 import VGC from './pages/VGC/VGC';
+import TeamBuilder from './pages/VGC/TeamBuilder/TeamBuilder';
 import Login from './pages/Login/Login';
-import Register from './pages/Register/Register';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
+import PageNotWorking from './pages/PageNotWorking/PageNotWorking';
+import { JSX } from 'react';
 
-
-function App() {
+function App():JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={Home()}/>
-        <Route path='/VGC' element={VGC()}/>
-        <Route path='/VGC/TeamBuilder' element={BuilderTeam()}/>
-        <Route path='/Login' element={Login()}/>
-        <Route path='/Register' element={Register()}/>
-        <Route path='*' element={PageNotFound()}/>
+        <Route path="/" element={Home()}/>
+        <Route path="/TCG" element={PageNotWorking()}/>
+        <Route path="/TCG/DeckBuilder" element={PageNotWorking()}/>
+        <Route path="/VGC" element={VGC()}/>
+        <Route path="/VGC/TeamBuilder" element={TeamBuilder()}/>
+        <Route path="/Login" element={Login()}/>
+        <Route path="/Register" element={PageNotWorking()}/>
+        <Route path="*" element={PageNotFound()}/>
       </Routes>
     </BrowserRouter>
   );

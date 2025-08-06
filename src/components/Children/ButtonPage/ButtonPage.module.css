@@ -1,0 +1,9 @@
+.buttonPage{
+    background-color: #4b79a1;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}

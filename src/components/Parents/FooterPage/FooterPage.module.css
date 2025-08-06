@@ -1,0 +1,118 @@
+/* Estilos principais do footer */
+footer {
+    background: linear-gradient(135deg, #263039, #0b1218); /* Gradiente suave */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Seção de logo e descrição do footer */
+.footerSectionMoreAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Logo */
+.footerSectionMoreAbout .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footerSectionMoreAbout .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footerSectionMoreAbout .logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Conteúdo da descrição */
+.footerSectionMoreAbout .contentFooter {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Estilo para links no conteúdo */
+.footerSectionMoreAbout a {
+    color: #ffe600;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footerSectionMoreAbout a:hover {
+    color: #ffffff;
+}
+
+/* Seção de direitos autorais */
+.footerSectionRights {
+    border-top: 1px solid #555;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+.footerSectionRights p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footerSectionRights a {
+    color: #ffe600;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footerSectionRights a:hover {
+    color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footerSectionMoreAbout {
+        padding: 0 20px;
+    }
+
+    .footerSectionMoreAbout .logo h1 {
+        font-size: 24px;
+    }
+
+    .footerSectionMoreAbout .contentFooter {
+        font-size: 14px;
+    }
+
+    .footerSectionRights {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerSectionMoreAbout .logo h1 {
+        font-size: 20px;
+    }
+
+    .footerSectionMoreAbout .contentFooter {
+        font-size: 13px;
+    }
+}
