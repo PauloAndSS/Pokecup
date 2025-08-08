@@ -1,0 +1,70 @@
+.cardPokemon {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardPokemon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(250, 204, 21, 0.3);
+}
+
+.divImg {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  text-align: center;
+}
+
+.divImg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.divDetails {
+  padding: 1rem;
+}
+
+.divDetails h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  text-transform: capitalize;
+}
+
+.divTipos {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* tipos: ex. .tipo-fire */
+.tipo-fire       { background-color: #F08030; color: white; }
+.tipo-water      { background-color: #6890F0; color: white; }
+.tipo-grass      { background-color: #78C850; color: white; }
+.tipo-electric   { background-color: #F8D030; color: black; }
+.tipo-psychic    { background-color: #F85888; color: white; }
+.tipo-ice        { background-color: #98D8D8; color: black; }
+.tipo-dragon     { background-color: #7038F8; color: white; }
+.tipo-dark       { background-color: #705848; color: white; }
+.tipo-fairy      { background-color: #EE99AC; color: black; }
+.tipo-fighting   { background-color: #C03028; color: white; }
+.tipo-flying     { background-color: #A890F0; color: white; }
+.tipo-poison     { background-color: #A040A0; color: white; }
+.tipo-ground     { background-color: #E0C068; color: black; }
+.tipo-rock       { background-color: #B8A038; color: white; }
+.tipo-bug        { background-color: #A8B820; color: white; }
+.tipo-ghost      { background-color: #705898; color: white; }
+.tipo-steel      { background-color: #B8B8D0; color: black; }
+
+.divTipos h3 {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  transition: transform 0.2s ease;
+}
+
+.divTipos h3:hover {
+  transform: scale(1.1);
+}

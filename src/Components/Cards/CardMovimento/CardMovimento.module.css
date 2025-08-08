@@ -1,0 +1,49 @@
+.cardMovimento {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px;
+  width: 10vw;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 200px;
+}
+
+.cardMovimento:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(255, 204, 0, 0.3);
+}
+
+.cardMovimento h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #ffcc00;
+}
+
+/* Conteúdo com rolagem se ultrapassar altura máxima */
+.movimentoDetails {
+  max-height: 120px;
+  overflow-y: auto;
+  padding-right: 4px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  scrollbar-width: thin;
+}
+
+/* Scrollbar personalizada para WebKit */
+.movimentoDetails::-webkit-scrollbar {
+  width: 6px;
+}
+
+.movimentoDetails::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.movimentoDetails::-webkit-scrollbar-thumb {
+  background-color: #ffcc00;
+  border-radius: 4px;
+}
