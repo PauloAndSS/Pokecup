@@ -1,4 +1,4 @@
-##Projeto Pokecup -  trabalho interdisciplinar usando API da PokeAPI
+## Projeto Pokecup -  trabalho interdisciplinar usando API da PokeAPI
 
 ## NPM's usados :
 
